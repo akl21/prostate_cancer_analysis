@@ -1,3 +1,10 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+
 **Introduction**
 
 According research conducted by the American Cancer Society, in 2018 around 165,000 men in the United States will be diagnosed with prostate cancer, the most common cancer in men after skin cancer (Key Statistics, 2018). If a patient is diagnosed with prostate cancer, the next step is to determine the prognosis, the likely result of the cancer in the near future. Arriving at an accurate prognosis helps the doctor create a treatment strategy, while also aiding the patient and his family with life planning in light ot the disease.
@@ -16,7 +23,7 @@ __Exploratory Data Analysis__
 
 To further explore the data, I created box-plots of the seminal vesicle invasion (SVI) variable versus PSA level and age. 
 
-``` r
+```{r}
       #read in data
       prostate_cancer = read.table("APPENC05.txt", header = FALSE)
       #set column names
