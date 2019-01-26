@@ -16,6 +16,7 @@ __Exploratory Data Analysis__
 
 To further explore the data, I created box-plots of the seminal vesicle invasion (SVI) variable versus PSA level and age. 
 
+``` r
       #read in data
       prostate_cancer = read.table("APPENC05.txt", header = FALSE)
       #set column names
@@ -29,5 +30,5 @@ To further explore the data, I created box-plots of the seminal vesicle invasion
       #plot of age versus svi
       plot(as.factor(prostate_cancer$svi), prostate_cancer$age,
             xlab = "SVI", ylab = "Age", main = "Association of SVI and Age")
-     
-     
+  ```
+  
